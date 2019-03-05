@@ -1,0 +1,191 @@
+
+body {
+	
+	text-align: left;
+	font-family:"Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	color: #061C37;
+	background: #25060B url(background.jpg);
+	
+}
+*
+{
+  margin: 0 auto 0 auto;
+ text-align:left;
+}
+
+#page
+{
+  display: block; 
+  height:auto;
+  position: relative; 
+  overflow: hidden; 
+  width: 670px;
+}
+
+.topNaviagationLink
+{
+text-align:center;
+position:relative;
+margin-top:30px;
+font-size:16px;
+margin-left:-10px;
+width:121px;
+height: 35px;
+line-height: 35px;
+float:left;
+color:#000000;
+font-family:"Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+}
+
+
+
+
+
+#mainPicture
+{
+clear:both;
+width:670px;
+height:345px;
+background-color:#160306;
+}
+
+#mainPicture .picture
+{
+position:relative;
+width:650px;
+height:325px;
+top:10px;
+margin-left:10px;
+background-image:url(mainImage.png);
+background-repeat:no-repeat;
+}
+
+#headerTitle
+{
+position:relative;
+text-align:left;
+top:14px;
+left:22px;
+font-size:27px;
+color:#FFFFFF;
+font-family:"Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+}
+
+#headerSubtext
+{
+position:relative;
+text-align:left;
+top:12px;
+left:22px;
+font-size:14px;
+color:#25060B;
+font-family:"Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+}
+
+.contentBox
+{
+margin-top:10px;
+width:670px;
+height:auto;
+background-color:#160306;
+padding-bottom:20px;
+}
+
+.contentBox .innerBox
+{
+margin-left:10px;
+position:relative;
+width:650px;
+height:500;
+top:10px;
+background-image:url(contentBack.png);
+background-color:#FFFFFF;
+background-repeat:repeat-x;
+}
+
+h1
+{
+font-size:25px;
+margin-bottom:10px;
+padding-top:18px;
+margin-left:15px;
+margin-top:15px;
+color:#1F1603;
+}
+
+.contentText
+{
+font-size:13px;
+line-height:24px;
+margin-left:13px;
+margin-right:13px;
+}
+
+#footer {
+text-align:center;
+padding-top:30px;
+font-size:9px;
+font-family:Arial, Helvetica, sans-serif;
+color:#C87002;
+margin:0px;
+}
+
+#footer a
+{
+color:#C87002;
+text-decoration:none;
+font-size:9px;
+}
+
+a
+{
+color:#C87002;
+text-decoration:none;
+}
+
+a:hover
+{
+color:#793C06
+text-decoration:none;
+border-bottom:dotted 2px;
+}
+a:visited
+{
+color:white;
+
+}
+
+
+
+
+html, body {
+text-align: center;
+}
+p {text-align: left;}
+
+h3,h4{
+text-align: center;
+}
+
+
+input[type=submit]
+{
+			padding:10px 200px;
+			font-weight: bold;
+			background-color: #0EBFE9;
+			text-transform: uppercase;
+			text-align: center;
+}
+
+#gameCanvas {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #score {
+        text-align: center;
+        font-size: 140px;
+        font-family: 'Antic Slab', serif;
+      }

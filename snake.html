@@ -1,32 +1,34 @@
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="style.css" />
-<title>JASS Gaming</title>
-</head>
+  <head>
+    <title>Snake Game</title>
 
-<body>
-    <div id="page">
-        <div class="topNaviagationLink"><a href="index.html">Home</a></div>
-        <div class="topNaviagationLink"><a href="index.html">About</a></div>
-        <div class="topNaviagationLink"><a href="index.html">Leaderboard</a></div>
-        <div class="topNaviagationLink"><a href="index.html">My Account</a></div>
-	    <div class="topNaviagationLink"><a href="index.html">Contact</a></div>
-	</div>
-    <div class="contentBox">
-    	<div class="innerBox">
-		<div id="score">0</div>
-		<canvas id="gameCanvas" width="300" height="300"></canvas>
-		
-  </div>
-  </div>
-        
-</body>
-<script>
+  </head>
+
+  <body style="background: url(background.jpg)">
+
+    <div id="score">0</div>
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+    <style>
+      #gameCanvas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #score {
+        text-align: center;
+        font-size: 140px;
+        font-family: 'Antic Slab', serif;
+      }
+    </style>
+  </body>
+
+  <script>
     const GAME_SPEED = 100;
     const CANVAS_BORDER_COLOUR = 'black';
-    const CANVAS_BACKGROUND_COLOUR = "white";
-    const SNAKE_COLOUR = 'lightgreen';
+    const CANVAS_BACKGROUND_COLOUR = 'black';
+    const SNAKE_COLOUR = 'darkgreen';
     const SNAKE_BORDER_COLOUR = 'darkgreen';
     const FOOD_COLOUR = 'red';
     const FOOD_BORDER_COLOUR = 'darkred';

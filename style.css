@@ -174,7 +174,7 @@ font-family:"Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
 {
 margin-top:10px;
 width:670px;
-height:auto;
+height:400px;
 background-color:#160306;
 padding-bottom:20px;
 }
@@ -184,7 +184,7 @@ padding-bottom:20px;
 margin-left:10px;
 position:relative;
 width:650px;
-height:550;
+height:380px;
 top:10px;
 background-image:url(contentBack.png);
 background-color:#FFFFFF;
@@ -271,7 +271,7 @@ text-align: center;
 
 input[type=submit]
 			{
-			padding:10px 200px;
+			padding:10px 130px;
 			font-weight: bold;
 			background-color: #0EBFE9;
 			text-transform: uppercase;

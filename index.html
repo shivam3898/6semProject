@@ -7,40 +7,37 @@
 
 <body>
     <div id="page">
-        <div class="topNaviagationLink"><a href="index.html">Home</a></div>
-        <div class="topNaviagationLink"><a href="index.html">About</a></div>
-        <div class="topNaviagationLink"><a href="index.html">Leaderboard</a></div>
-        <div class="topNaviagationLink"><a href="index.html">My Account</a></div>
-	    <div class="topNaviagationLink"><a href="index.html">Contact</a></div>
+        <div class="topNaviagationLink"><a href="index.html">HOME</a></div>
+		<div class="topNaviagationLink"><a href="index.html">ACCOUNT</a></div>     
+        <div class="topNaviagationLink"><a href="index.html">LEADERBOARD</a></div>
+        <div class="topNaviagationLink"><a href="index.html">ABOUT</a></div>
+	    
 	</div>
     
 	
 	
 	
 	<div class="slideshow-container">
-
 	<div class="mySlides fade">
-	  <div class="numbertext">1 / 3</div>
-	  <img src="shooting.PNG" width="670" height="340">
-	  <div class="text">Caption Text</div>
+	  <img src="a5.jpg" width="670" height="340">
 	</div>
-
 	<div class="mySlides fade">
-	  <div class="numbertext">2 / 3</div>
-	  <img src="box.png" width="670" height="340">
-	  <div class="text">Caption Two</div>
+	  <img src="rand5.jpg" width="670" height="340">
 	</div>
-
 	<div class="mySlides fade">
-	  <div class="numbertext">3 / 3</div>
-	  <img src="snake.jpg" width="670" height="340">
-	  <div class="text">Caption Three</div>
+	  <img src="rand7.jpg" width="670" height="340">
 	</div>
-
+	<div class="mySlides fade">
+	  <img src="rand1.jpg" width="670" height="340">
+	</div>
+	<div class="mySlides fade">
+	  <img src="mainImage.png" width="670" height="340">
 	</div>
 	<br>
 
 	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
 	  <span class="dot"></span> 
 	  <span class="dot"></span> 
 	  <span class="dot"></span> 
@@ -53,13 +50,19 @@
 	
         <div class="contentBox">
     	<div class="innerBox">
-        	<h1>My Gaming Website</h1>
+        	<h1>ANTHEM</h1>
           <div class="contentText">
-			<form>  
-           <p>Username :</p> <input type="text" placeholder="Username" name="username" required>
-			<p>Password :</p> <input type="password" placeholder="****" name="password" required><br>
-			<input type="button" value="Sign In" >
+		  <p style="font-size:20; color: #000000">Anthem is a platform for players all across to participate in various games and 
+		  compete for the top spot in the leaderboard.
+		  Join us today to start competing.<br> Already have an account? Sign in below.<br><br>
+		  </p>
+		  <div id="sdiv">
+			<form action="game.html" method="post">  
+           USERNAME &nbsp: <input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required><br>
+			PASSWORD : <input style="height:30px;font-size:14pt;" type="password" placeholder="****" name="password" required><br><br>
+			<input type="submit" name="commit" value="Login">
 		</form>
+		</div>
 			<h3 style="text-align: left">OR</h3>
 		<form>
 			<input type="button" value="Sign Up" onclick="window.location.href='signup.html'" >
@@ -87,7 +90,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+  setTimeout(showSlides, 5000);
 }
 </script>
 	

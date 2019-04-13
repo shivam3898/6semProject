@@ -3,15 +3,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <title>ASS Gaming</title>
+
 </head>
 
 <body>
     <div id="page">
-        <div class="topNaviagationLink"><a href="index.html">Home</a></div>
-        <div class="topNaviagationLink"><a href="index.html">About</a></div>
-        <div class="topNaviagationLink"><a href="index.html">Leaderboard</a></div>
-        <div class="topNaviagationLink"><a href="index.html">My Account</a></div>
-	    <div class="topNaviagationLink"><a href="index.html">Contact</a></div>
+        <div class="topNaviagationLink"><a href="index.html">HOME</a></div>
+		<div class="topNaviagationLink"><a href="index.html">ACCOUNT</a></div>     
+        <div class="topNaviagationLink"><a href="index.html">LEADERBOARD</a></div>
+        <div class="topNaviagationLink"><a href="index.html">ABOUT</a></div>
 	</div>
 
         <div class="contentBox">
@@ -20,18 +20,21 @@
           
 		  
             <div>
-        <h4>Fill details below.</h4><br>
-	<form action="a.html" method="post">
-	<div align="left" style="float: left" >
+        <h2>Fill details below.</h2><br>
+		
+	<form action="account.html" method="post" >
+	
+	<div align="left" style="float: left" id="sdiv">
 	Username*<br><br>Password*<br><br><br>Confirm Password*<br><br>
 
 	</div>
-	<div style="float: right">
-	<input type="text" placeholder="Username" name="username" required> <br><br>
-		<input type="password" placeholder="****" name="password" required><br><br>
-		<input type="password" placeholder="****" name="" required><br><br>
+	<div align="left" style="float: right" id="sdiv">
+	<input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required> <br><br>
+		<input style="height:30px;font-size:14pt;" type="password" placeholder="****" name="password" id="password" required><br><br>
+		<input style="height:30px;font-size:14pt;" type="password" placeholder="****" name="confrim_password" id="confirm_password"required><br><br>
        <input type="submit">
 		</div>
+	
 	</form>
 	</div>
             
@@ -42,7 +45,21 @@
         </div>
 
     </div>
-	
+	<script>
+		var password = document.getElementById("password")
+		  , confirm_password = document.getElementById("confirm_password");
+
+		function validatePassword(){
+		  if(password.value != confirm_password.value) {
+			confirm_password.setCustomValidity("Passwords Don't Match");
+		  } else {
+			confirm_password.setCustomValidity('');
+		  }
+		}
+
+		password.onchange = validatePassword;
+		confirm_password.onkeyup = validatePassword;
+</script>
 	
         
 </body>

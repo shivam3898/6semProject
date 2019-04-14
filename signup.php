@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
 			if($mysqli->query($sql)){
 				echo "data inserted successfully...";
 			}
-			if(($mysqli->error) == "Duplicate entry '$username' for key 'PRIMARY'"){
+			elseif(($mysqli->error) == "Duplicate entry '$username' for key 'PRIMARY'"){
 				echo"<script>document.getElementById('para').innerHTML='Username already taken. Try another name.'</script>";
 			}
 			else{

@@ -265,7 +265,7 @@ function drop(){
         dropStart = Date.now();
     }
     if( !gameOver){
-        requestAnimationFrame(drop);
+        requestAnimationFrame(drop);      //add php for score here
     }
 }
 

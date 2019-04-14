@@ -13,7 +13,7 @@ canvas {
 }
 </style>
 </head>
-<body onload="startGame()" onmousedown="accelerate(-0.08)" onmouseup="accelerate(0.08)" style="background: url(background.jpg)">
+<body onload="startGame()" onmousedown="accelerate(-0.08)" onmouseup="accelerate(0.08)" style="background: url(bg.png)">
 <script>
 
 var myGamePiece;
@@ -36,10 +36,13 @@ var myGameArea = {
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 20);
-        },
+	},
     clear : function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    }
+    },
+	stop : function() {
+  			clearInterval(this.interval);
+		}
 }
 
 function component(width, height, color, x, y, type) {
@@ -93,12 +96,13 @@ function component(width, height, color, x, y, type) {
         return crash;
     }
 }
-
-function updateGameArea() {
+	function updateGameArea() {
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
-            return;
+            localStorage.setItem("storageName",myGameArea.frameNo);
+			location.href="box2.html";
+			return;
         } 
     }
     myGameArea.clear();

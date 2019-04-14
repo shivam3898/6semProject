@@ -28,6 +28,7 @@ if(isset($_POST['submit'])){
 			$sql = "INSERT INTO `users` (`username`, `password`) VALUES ('$username', '$password')";
 			if($mysqli->query($sql)){
 				echo "data inserted successfully...";
+				echo "<script>window.location.href='index.php';</script>";
 			}
 			elseif(($mysqli->error) == "Duplicate entry '$username' for key 'PRIMARY'"){
 				echo"<script>document.getElementById('para').innerHTML='Username already taken. Try another name.'</script>";
@@ -44,7 +45,7 @@ if(isset($_POST['submit'])){
 	
 	
     <div id="page">
-        <div class="topNaviagationLink"><a href="index.html">HOME</a></div>
+        <div class="topNaviagationLink"><a href="index.php">HOME</a></div>
 		<div class="topNaviagationLink"><a href="account.html">ACCOUNT</a></div>     
         <div class="topNaviagationLink"><a href="leaderboard.html">LEADERBOARD</a></div>
         <div class="topNaviagationLink"><a href="about.html">ABOUT</a></div>
@@ -68,7 +69,7 @@ if(isset($_POST['submit'])){
 	<input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required> <br><br>
 		<input style="height:30px;font-size:14pt;" type="password" placeholder="****" name="password" id="password" required><br><br>
 		<input style="height:30px;font-size:14pt;" type="password" placeholder="****" name="confirm_password" id="confirm_password"required><br><br>
-       <input type="submit" name="submit">
+       <input type="submit" name="submit" >
 		</div>
 	
 	</form>

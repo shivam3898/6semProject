@@ -12,6 +12,7 @@
 	
 	<p id="para"></p>
 	<?php
+	session_start();
 if(isset($_POST['submit'])){
  $username = $_POST['username']; 
  $password = $_POST['password'];
@@ -46,7 +47,7 @@ if(isset($_POST['submit'])){
 	
     <div id="page">
         <div class="topNaviagationLink"><a href="index.php">HOME</a></div>
-		<div class="topNaviagationLink"><a href="account.html">ACCOUNT</a></div>     
+		<div class="topNaviagationLink"><a href="account.php">ACCOUNT</a></div>     
         <div class="topNaviagationLink"><a href="leaderboard.html">LEADERBOARD</a></div>
         <div class="topNaviagationLink"><a href="about.html">ABOUT</a></div>
 	</div>
@@ -69,7 +70,7 @@ if(isset($_POST['submit'])){
 	<input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required> <br><br>
 		<input style="height:30px;font-size:14pt;" type="password" placeholder="****" name="password" id="password" required><br><br>
 		<input style="height:30px;font-size:14pt;" type="password" placeholder="****" name="confirm_password" id="confirm_password"required><br><br>
-       <input type="submit" name="submit" >
+       <input type="submit" name="submit">
 		</div>
 	
 	</form>

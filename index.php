@@ -1,4 +1,5 @@
 <html>
+<?php session_start(); ?>
 <?php include_once("config.php"); ?>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -10,17 +11,18 @@
 	
 	
 	<?php
-		if(isset($_POST['commit'])){
-			$username = $_POST['username'];
-			$password = $_POST['password'];
-			$sql = sprintf("SELECT * FROM users WHERE username='%s' AND password='%s'", $username, $password);
-			if($mysqli->query($sql)){
-				header("Location: http://localhost/6semProject/account.html");
-			}
-			else{
-				echo "error...".$mysqli->error;
-			}
-		}
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $sql = "SELECT * FROM `users` WHERE `username`='$username' and `password`='$password'";
+    $result = $mysqli->query($sql);
+    if($result->num_rows > 0){
+        $_SESSION['username'] = $username;
+        header("Location:http://localhost/6semProject/account.php");
+    }
+else{
+    echo "Username not found";
+}
+
 ?>
 	
 	
@@ -30,7 +32,7 @@
 	
     <div id="page">
         <div class="topNaviagationLink"><a href="index.php">HOME</a></div>
-		<div class="topNaviagationLink"><a href="account.html">ACCOUNT</a></div>     
+		<div class="topNaviagationLink"><a href="account.php">ACCOUNT</a></div>     
         <div class="topNaviagationLink"><a href="leaderboard.html">LEADERBOARD</a></div>
         <div class="topNaviagationLink"><a href="about.html">ABOUT</a></div>
 	    
@@ -82,7 +84,7 @@
 		  <div id="sdiv">
 			<form action="index.php" method="post">  
            USERNAME &nbsp: <input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required><br>
-			PASSWORD : <input style="height:30px;font-size:14pt;" type="password" placeholder="****" name="password" required><br><br>
+			PASSWORD : <input style="height:30px;font-size:14pt;margin-left:3px" type="password" placeholder="****" name="password" required><br><br>
 			<input type="submit" name="commit" value="Login">
 		</form>
 		</div>
@@ -93,8 +95,7 @@
                 </div>       
         </div>
     </div>
-	
-	
+
 <script>
 var slideIndex = 0;
 showSlides();

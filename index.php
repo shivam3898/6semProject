@@ -17,7 +17,7 @@
     $result = $mysqli->query($sql);
     if($result->num_rows > 0){
         $_SESSION['username'] = $username;
-        header("Location:http://localhost/6semProject/account.php");
+        header("Location:http://localhost/6semProject/game.html");
     }
 else{
     echo "Username not found";

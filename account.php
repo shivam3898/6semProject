@@ -3,7 +3,7 @@
 session_start();
 
 if(!isset($_SESSION['username'])){
-   header("Location:http://localhost/6semProject/login.html");
+   header("Location:http://localhost/6semProject/login.php");
 }
 
 ?>
@@ -15,6 +15,7 @@ if(!isset($_SESSION['username'])){
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <title>ASS Gaming</title>
+
 
 </head>
 

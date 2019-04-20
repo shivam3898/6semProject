@@ -69,7 +69,9 @@
      */
     function main() {
       // If the game ended return early to stop game
-      if (didGameEnd()){ return;	}						// ADD PHP FOR SCORE HERE!!!!!
+      if (didGameEnd()){ 
+			  window.location.href = "snake2.php?score=" + score; 		 		  
+		  return;	}						
       setTimeout(function onTick() {
         changingDirection = false;
         clearCanvas();

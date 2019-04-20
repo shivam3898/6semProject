@@ -8,21 +8,24 @@
 </head>
 
 <body>
-	
-	
-	<?php
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $sql = "SELECT * FROM `users` WHERE `username`='$username' and `password`='$password'";
-    $result = $mysqli->query($sql);
-    if($result->num_rows > 0){
-        $_SESSION['username'] = $username;
-        header("Location:http://localhost/6semProject/game.html");
-    }
-else{
-    echo "Username not found";
-}
 
+	
+	
+	
+<?php
+	if(isset($_POST['commit'])){
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+		$sql = "SELECT * FROM `users` WHERE `username`='$username' and `password`='$password'";
+		$result = $mysqli->query($sql);
+		if($result->num_rows > 0){
+			$_SESSION['username'] = $username;
+			header("Location:http://localhost/6semProject/account2.php");
+		}
+		else{
+			echo "<script>alert('Username and password do not match');</script>";
+		}
+	}
 ?>
 	
 	

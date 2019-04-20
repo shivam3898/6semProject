@@ -1,3 +1,9 @@
+<?php 
+include_once("config.php");
+session_start();
+?>
+
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -16,7 +22,11 @@
 
         <div class="contentBox">
     	<div class="innerBox">
-			<h1>YOUR ACCOUNT</h1>
+			<h1>GAMES</h1>
+			<a href="games/snake.php"><img src="sn.png"></a>
+			<a href="games/tetris/index.html"><img src="tt.png"></a>
+			<a href="games/box.html"><img src="co.png"></a>
+			
         </div>
 		</div>
 	

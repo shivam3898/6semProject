@@ -1,3 +1,6 @@
+<?php include_once("config.php");
+session_start();
+?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -10,6 +13,28 @@
 </head>
 
 <body>
+	
+	
+	<?php
+		if(isset($_POST['commit'])){
+			$username = $_POST['username'];
+			$password = $_POST['password'];
+			$sql = "SELECT * FROM `users` WHERE `username`='$username' and `password`='$password'";
+			$result = $mysqli->query($sql);
+			if($result->num_rows > 0){
+				$_SESSION['username'] = $username;
+				header("Location:http://localhost/6semProject/account2.php");
+			}
+			else{
+				echo "<script>alert('Username and password do not match');</script>";
+			}
+		}
+	?>
+	
+	
+	
+	
+	
     <div id="page">
         <div class="topNaviagationLink"><a href="index.php">HOME</a></div>
 		<div class="topNaviagationLink"><a href="account.html">ACCOUNT</a></div>     

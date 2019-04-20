@@ -1,3 +1,8 @@
+<?php 
+include_once("config.php");
+session_start();
+$username = $_SESSION['username'];
+?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -16,14 +21,12 @@
 
         <div class="contentBox">
     	<div class="innerBox">
-			<h1>GAMES</h1>
-			<a href="games/snake.html"><img src="sn.png"></a>
-			<a href="games/tetris/index.html"><img src="tt.png"></a>
-			<a href="games/box.html"><img src="co.png"></a>
+			<h1>YOUR ACCOUNT</h1>
+			<p style="font-size:20px"><b>UserName : </b><?php echo"".$username;?></p>
+			<button onclick="window.location.href='http://localhost/6semProject/games.php';">Go To Games</button>
 			
         </div>
 		</div>
-	
 	
 
         

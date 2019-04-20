@@ -15,7 +15,7 @@ session_start();
 <body>
     <div id="page">
         <div class="topNaviagationLink"><a href="index.php">HOME</a></div>
-		<div class="topNaviagationLink"><a href="account.php">ACCOUNT</a></div>     
+		<div class="topNaviagationLink"><a href="account2.php">ACCOUNT</a></div>     
         <div class="topNaviagationLink"><a href="leaderboard.html">LEADERBOARD</a></div>
         <div class="topNaviagationLink"><a href="about.html">ABOUT</a></div>
 	</div>
@@ -25,7 +25,7 @@ session_start();
 			<h1>GAMES</h1>
 			<a href="games/snake.php"><img src="sn.png"></a>
 			<a href="games/tetris/index.html"><img src="tt.png"></a>
-			<a href="games/box.html"><img src="co.png"></a>
+			<a href="games/box.php"><img src="co.png"></a>
 			
         </div>
 		</div>

@@ -2,6 +2,13 @@
 include_once("config.php");
 session_start();
 $username = $_SESSION['username'];
+$sql="Select `snake`, `tetris`,`box` FROM `users` WHERE `username`='$username'";
+$retval = $mysqli->query($sql);
+	while($row=mysqli_fetch_assoc($retval)){
+		$box=$row['box'];
+		$snake=$row['snake'];
+		$tetris=$row['tetris'];
+	}
 ?>
 <html>
 <head>
@@ -24,6 +31,20 @@ $username = $_SESSION['username'];
 			<h1>YOUR ACCOUNT</h1>
 			<p style="font-size:20px"><b>UserName : </b><?php echo"".$username;?></p>
 			<button onclick="window.location.href='http://localhost/6semProject/games.php';">Go To Games</button>
+			<h1>YOUR High Scores</h1><br>
+			<table>
+				<tr>
+					<th>Snake</th>
+					<th>Tetris</th>
+					<th>Box</th>
+				</tr>
+				<tr>
+					<td><?php echo"".$snake;?></td>
+					<td><?php echo"".$tetris;?></td>
+					<td><?php echo"".$box;?></td>
+				</tr>
+			
+			</table>
 			
         </div>
 		</div>

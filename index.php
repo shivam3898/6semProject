@@ -2,9 +2,13 @@
 <?php session_start(); ?>
 <?php include_once("config.php"); ?>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="style.css" />
-<title>ASS Gaming</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>ASS Gaming</title>
 </head>
 
 <body>
@@ -36,7 +40,7 @@
     <div id="page">
         <div class="topNaviagationLink"><a href="index.php">HOME</a></div>
 		<div class="topNaviagationLink"><a href="account.php">ACCOUNT</a></div>     
-        <div class="topNaviagationLink"><a href="leaderboard.php">LEADERBOARD</a></div>
+        <div class="topNaviagationLink"><a href="leaderboard.php">HIGH_SCORE</a></div>
         <div class="topNaviagationLink"><a href="about.html">ABOUT</a></div>
 	    
 	</div>
@@ -45,19 +49,19 @@
 	
 	
 	<div class="slideshow-container">
-	<div class="mySlides fade">
+	<div class="mySlides faded">
 	  <img src="a5.jpg" width="670" height="340">
 	</div>
-	<div class="mySlides fade">
+	<div class="mySlides faded">
 	  <img src="rand5.jpg" width="670" height="340">
 	</div>
-	<div class="mySlides fade">
+	<div class="mySlides faded">
 	  <img src="rand7.jpg" width="670" height="340">
 	</div>
-	<div class="mySlides fade">
+	<div class="mySlides faded">
 	  <img src="rand1.jpg" width="670" height="340">
 	</div>
-	<div class="mySlides fade">
+	<div class="mySlides faded">
 	  <img src="mainImage.png" width="670" height="340">
 	</div>
 	</div>
@@ -78,23 +82,26 @@
 	
         <div class="contentBox">
     	<div class="innerBox">
-        	<h1>ANTHEM</h1>
+        	<h1><strong>ANTHEM</strong></h1>
           <div class="contentText">
 		  <p style="font-size:20; color: black">Anthem is a platform for players all across to participate in various games and 
 		  compete for the top spot in the leaderboard.
 		  Join us today to start competing.<br> Already have an account? Sign in below.<br><br>
 		  </p>
-		  <div id="sdiv">
+		  <div id="sdiv2">
 			<form action="index.php" method="post">  
-           USERNAME &nbsp: <input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required><br>
+           <strong>USERNAME &nbsp: <input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required><br><br>
 			PASSWORD : <input style="height:30px;font-size:14pt;margin-left:3px" type="password" placeholder="****" name="password" required><br><br>
-			<input type="submit" name="commit" value="Login">
+			</div>
+			<div id="btn_pos">
+			<div id="btn_pos"><input type="submit" name="commit" value="Login" class="btn btn-dark"><div>
 		</form>
-		</div>
-			<h3 style="text-align: left">OR</h3>
+		
+			<h3 style="text-align: left; color:white">OR</h3>
 		<form>
-			<input type="button" value="Sign Up" onclick="window.location.href='signup.php'" >
+			<input type="button" value="Sign Up" onclick="window.location.href='signup.php'" class="btn btn-dark">
 		</form>
+				</div>
                 </div>       
         </div>
     </div>

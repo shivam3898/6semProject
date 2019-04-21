@@ -1,5 +1,9 @@
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 <?php include_once("config.php"); ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
@@ -54,29 +58,19 @@ if(isset($_POST['submit'])){
 
         <div class="contentBox">
     	<div class="innerBox">
-        	<h1>Sign Up</h1><br><br>
-          
-		  
-            <div>
-        <h2>Fill details below.</h2><br>
-		
-	<form action="signup.php" method="post" >
-	
-	<div align="left" style="float: left" id="sdiv">
-	Username*<br><br>Password*<br><br><br>Confirm Password*<br><br>
-
-	</div>
-	<div align="left" style="float: right" id="sdiv">
-	<input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required> <br><br>
-		<input style="height:30px;font-size:14pt;" type="password" placeholder="****" name="password" id="password" required><br><br>
-		<input style="height:30px;font-size:14pt;" type="password" placeholder="****" name="confirm_password" id="confirm_password"required><br><br>
-       <input type="submit" name="submit">
+        	<h1><strong>Sign Up</h1><br>
+			<div id="sign_div">
+				USERNAME*<br><br>PASSWORD*<br><br>CONFIRM PASSWORD*
+			</div>
+             <div id="sign_div2">		
+				<form action="signup.php" method="post" >
+				<input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required> <br><br>
+				<input style="height:30px;font-size:14pt;" type="password" placeholder="****" name="password" id="password" required><br><br>
+				<input style="height:30px;font-size:14pt;" type="password" placeholder="****" name="confirm_password"id="confirm_password"required><br><br>
+				<input type="submit" name="submit" class="btn btn-dark">
+				</form>
+			</div>       
 		</div>
-	
-	</form>
-	</div>
-            
-     </div>
 
     </div>
 	<script>

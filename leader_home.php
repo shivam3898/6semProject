@@ -18,7 +18,7 @@
     	<div class="innerBox">
 			<h1>LEADERBOARD</h1>
 			<a href="lead_snake.php"><img src="sn.png"></a>
-			<a href="lead_tetris.php"><img src="tt.png"></a>
+			<a href="lead_tetris.html"><img src="tt.png"></a>
 			<a href="lead_box.php"><img src="co.png"></a>
 			
         </div>

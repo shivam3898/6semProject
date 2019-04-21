@@ -16,7 +16,7 @@ session_start();
     <div id="page">
         <div class="topNaviagationLink"><a href="index.php">HOME</a></div>
 		<div class="topNaviagationLink"><a href="account2.php">ACCOUNT</a></div>     
-        <div class="topNaviagationLink"><a href="leaderboard.html">LEADERBOARD</a></div>
+        <div class="topNaviagationLink"><a href="leaderboard.php">LEADERBOARD</a></div>
         <div class="topNaviagationLink"><a href="about.html">ABOUT</a></div>
 	</div>
 

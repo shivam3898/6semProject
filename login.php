@@ -3,12 +3,16 @@ session_start();
 ?>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="style.css" />
-<title>ASS Gaming</title>
-<script>
-	alert("Login First");
-</script>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>ASS Gaming</title>
+	<script>
+		alert("Login First");
+	</script>
 
 </head>
 
@@ -38,25 +42,29 @@ session_start();
     <div id="page">
         <div class="topNaviagationLink"><a href="index.php">HOME</a></div>
 		<div class="topNaviagationLink"><a href="account.html">ACCOUNT</a></div>     
-        <div class="topNaviagationLink"><a href="leaderboard.html">LEADERBOARD</a></div>
+        <div class="topNaviagationLink"><a href="leaderboard.php">LEADERBOARD</a></div>
         <div class="topNaviagationLink"><a href="about.html">ABOUT</a></div>
 	</div>
 
         <div class="contentBox">
     	<div class="innerBox">
-			<h1>LOGIN</h1>
+			<h1><strong>LOGIN</h1>
 			
-			 <div id="sdiv">
+			 
 			<form action="index.php" method="post">  
-           USERNAME &nbsp: <input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required><br>
+			<div id="sdiv">
+           USERNAME &nbsp: <input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required><br><br>
 			PASSWORD : <input style="height:30px;font-size:14pt;margin-left:3px" type="password" placeholder="****" name="password" required><br><br>
-			<input type="submit" name="commit" value="Login">
+			</div>
+			<div id="btn_pos2">
+			<input type="submit" name="commit" value="Login" class="btn btn-dark">
 		</form>
-		</div>
+		
 			<h3 style="text-align: left">OR</h3>
 		<form>
-			<input type="button" value="Sign Up" onclick="window.location.href='signup.php'" >
+			<input type="button" value="Sign Up" onclick="window.location.href='signup.php'" class="btn btn-dark">
 		</form>
+		</div>
         </div>
 		</div>
 	

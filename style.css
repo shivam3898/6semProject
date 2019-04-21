@@ -37,20 +37,20 @@ text-align:center;
 position:relative;
 margin-top:30px;
 font-size:18px;
-margin-left:10px;
+margin-left:15px;
 width:121px;
 height: 35px;
 line-height: 35px;
 float:left;
-color:#000000;
 font-family:"Verdana";
+font-weight: bold;
 }
 
 
 .topNaviagationLink a
 {
 text-decoration:none;
-color:#000000;
+color:black;
 margin-bottom:0px;
 
 }
@@ -60,7 +60,7 @@ margin-bottom:0px;
 text-align:center;
 color:#FFFFFF;
 display: block;
-width:131px;
+width:134px;
 height: 35px;
 line-height: 35px;
 background-image:url(tab.jpg);
@@ -94,7 +94,7 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
-.fade {
+.faded {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 0.5s;
   animation-name: fade;
@@ -120,7 +120,7 @@ img {vertical-align: middle;}
 {
 margin-top:10px;
 width:670px;
-height:400px;
+height:420px;
 background-color:#160306;
 padding-bottom:20px;
 }
@@ -130,7 +130,7 @@ padding-bottom:20px;
 margin-left:10px;
 position:relative;
 width:650px;
-height:380px;
+height:400px;
 top:10px;
 background-image:url(bgB.jpg);
 background-color:#FFFFFF;
@@ -167,11 +167,6 @@ color:#793C06
 text-decoration:none;
 border-bottom:dotted 2px;
 }
-a:visited
-{
-color:white;
-
-}
 
 
 
@@ -185,27 +180,44 @@ text-align: center;
 }
 
 
-input[type=submit]
-			{
-			padding:10px 135px;
-			font-weight: bold;
-			background-color: #0EBFE9;
-			text-transform: uppercase;
-			text-align: center;
-			}
-input[type=button]
-			{
-			padding:10px 135px;
-			font-weight: bold;
-			background-color: #0EBFE9;
-			text-transform: uppercase;
-			text-align: center;
-			}
-
 #sdiv{
-color: white;
-
-font-size: 18px;
+	position:absolute;
+	color: white;
+	top: 25%;
+	left: 20%;	
+	font-size: 18px;
+}
+#sdiv2{
+	position:absolute;
+	color: white;
+	top: 45%;
+	left: 20%;	
+	font-size: 18px;
 }
 
-			
+#btn_pos{
+	position:absolute;
+    transition: .5s ease;
+    top: 69%;
+    left: 42%;	
+}
+#btn_pos2{
+	position:absolute;
+    transition: .5s ease;
+    top: 50%;
+    left: 41%;	
+}
+#sign_div{
+	position:absolute;
+	color: white;
+	top: 25%;
+	left: 12%;	
+	font-size: 18px;
+}
+#sign_div2{
+	position:absolute;
+	color: white;
+	top: 25%;
+	left: 50%;	
+	font-size: 18px;
+}		

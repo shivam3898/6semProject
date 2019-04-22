@@ -70,7 +70,8 @@
     function main() {
       // If the game ended return early to stop game
       if (didGameEnd()){ 
-			  window.location.href = "snake2.php?score=" + score; 		 		  
+			  document.cookie="score=" + score;
+		  	  window.location.href="snake2.php";
 		  return;	}						
       setTimeout(function onTick() {
         changingDirection = false;

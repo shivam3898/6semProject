@@ -24,7 +24,7 @@
 		$result = $mysqli->query($sql);
 		if($result->num_rows > 0){
 			$_SESSION['username'] = $username;
-			header("Location:http://localhost/6semProject/account2.php");
+			header("Location:http://localhost/new folder/6semProject/account2.php");
 		}
 		else{
 			echo "<script>alert('Username and password do not match');</script>";
@@ -88,14 +88,14 @@
 		  compete for the top spot in the leaderboard.
 		  Join us today to start competing.<br> Already have an account? Sign in below.<br><br>
 		  </p>
+		  <form action="index.php" method="post">  
 		  <div id="sdiv2">
-			<form action="index.php" method="post">  
            <strong>USERNAME &nbsp: <input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required><br><br>
 			PASSWORD : <input style="height:30px;font-size:14pt;margin-left:3px" type="password" placeholder="****" name="password" required><br><br>
 			</div>
+			</form>
 			<div id="btn_pos">
 			<div id="btn_pos"><input type="submit" name="commit" value="Login" class="btn btn-dark"><div>
-		</form>
 		
 			<h3 style="text-align: left; color:white">OR</h3>
 		<form>

@@ -25,7 +25,7 @@ $retval = $mysqli->query($sql);
     <div id="page">
         <div class="topNaviagationLink"><a href="index.php">HOME</a></div>
 		<div class="topNaviagationLink"><a href="account.php">ACCOUNT</a></div>     
-        <div class="topNaviagationLink"><a href="leaderboard.html">LEADERBOARD</a></div>
+        <div class="topNaviagationLink"><a href="leaderboard.php">LEADERBOARD</a></div>
         <div class="topNaviagationLink"><a href="about.html">ABOUT</a></div>
 	</div>
 
@@ -33,7 +33,7 @@ $retval = $mysqli->query($sql);
     	<div class="innerBox">
 			<h1>YOUR ACCOUNT</h1>
 			<p style="font-size:20px"><b>UserName : </b><?php echo"".$username;?></p>
-			<button onclick="window.location.href='http://localhost/6semProject/games.php';">Go To Games</button>
+			<button onclick="window.location.href='games.php';">Go To Games</button>
 			<h1>YOUR High Scores</h1><br>
 			<table>
 				<tr>

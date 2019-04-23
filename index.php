@@ -37,14 +37,14 @@
 	
 	
 	
-    <div id="page">
+   <!-- <div id="page">
         <div class="topNaviagationLink"><a href="index.php">HOME</a></div>
 		<div class="topNaviagationLink"><a href="account.php">ACCOUNT</a></div>     
         <div class="topNaviagationLink"><a href="leaderboard.php">HIGH_SCORE</a></div>
         <div class="topNaviagationLink"><a href="about.html">ABOUT</a></div>
 	    
 	</div>
-    
+    -->
 	
 	
 	

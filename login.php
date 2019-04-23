@@ -58,14 +58,10 @@ session_start();
 			</div>
 			<div id="btn_pos2">
 			<input type="submit" name="commit" value="Login" class="btn btn-dark">
-		</form>
-		
-			<h3 style="text-align: left">OR</h3>
-		<form>
-			<input type="button" value="Sign Up" onclick="window.location.href='signup.php'" class="btn btn-dark">
-		</form>
-		</div>
-        </div>
+			<input type="button" value="Sign Up" onclick="window.location.href='signup.php'" class="btn btn-dark">			
+			</form>
+			</div>
+			</div>
 		</div>
 	
 	

@@ -48,7 +48,7 @@ $retval = $mysqli->query($sql);
 				</tr>
 			
 			</table>
-			
+			<button onclick="window.location.href = 'logout.php';">LOGOUT</button>
         </div>
 		</div>
 	

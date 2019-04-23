@@ -62,15 +62,16 @@ $retval = $mysqli->query($sql);
 			<a href="lead_tetris.php"><img src="tt.png"></a>
 			<a href="lead_box.php"><img src="co.png"></a>
 			-->
+			<!--
 			<ul class="nav nav-pills" role="tablist">
 				<li class="nav-item">
-				  <a class="nav-link active" data-toggle="pill" href="#home">SNAKE</a>
+				  <a class="nav-link active" data-toggle="pill" href="#home" style="font-size:20px;">SNAKE</a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" data-toggle="pill" href="#menu1">TETRIS</a>
+				  <a class="nav-link" data-toggle="pill" href="#menu1" style="font-size:20px;">TETRIS</a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" data-toggle="pill" href="#menu2">COPTER</a>
+				  <a class="nav-link" data-toggle="pill" href="#menu2" style="font-size:20px;">COPTER</a>
 				</li>
 			  </ul>
 			  <div class="tab-content">
@@ -111,6 +112,127 @@ $retval = $mysqli->query($sql);
 				</div>
 				<div id="menu1" class="container tab-pane fade"><br>
 						  <table class="table table-dark table-striped">
+						<tr>
+							<th>USERNAME</th>
+							<th>SCORE</th>					
+						</tr>
+						<tr>
+							<td><?php echo"".$username_tetris[0];?></td>
+							<td><?php echo"".$tetris[0];?></td>
+							
+						</tr>
+						<tr>
+							<td><?php echo"".$username_tetris[1];?></td>
+							<td><?php echo"".$tetris[1];?></td>
+							
+						</tr>
+						<tr>
+							<td><?php echo"".$username_tetris[2];?></td>
+							<td><?php echo"".$tetris[2];?></td>
+							
+						</tr>
+						<tr>
+							<td><?php echo"".$username_tetris[3];?></td>
+							<td><?php echo"".$tetris[3];?></td>
+							
+						</tr>
+						<tr>
+							<td><?php echo"".$username_tetris[4];?></td>
+							<td><?php echo"".$tetris[4];?></td>
+							
+						</tr>
+					
+					</table>
+				</div>
+				<div id="menu2" class="container tab-pane fade"><br>
+				  <table class="table table-dark table-striped">
+				<tr>
+					<th>USERNAME</th>
+					<th>SCORE</th>
+					
+				</tr>
+				<tr>
+					<td><?php echo"".$username_box[0];?></td>
+					<td><?php echo"".$box[0];?></td>
+					
+				</tr>
+				<tr>
+					<td><?php echo"".$username_box[1];?></td>
+					<td><?php echo"".$box[1];?></td>
+					
+				</tr>
+				<tr>
+					<td><?php echo"".$username_box[2];?></td>
+					<td><?php echo"".$box[2];?></td>
+					
+				</tr>
+				<tr>
+					<td><?php echo"".$username_box[3];?></td>
+					<td><?php echo"".$box[3];?></td>
+					
+				</tr>
+				<tr>
+					<td><?php echo"".$username_box[4];?></td>
+					<td><?php echo"".$box[4];?></td>
+					
+				</tr>
+			
+			</table>
+				</div>
+			  </div>
+			  -->
+			  
+			  <ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item">
+				  <a class="nav-link active" data-toggle="tab" href="#home" style="font-size:20px; color:black;">SNAKE</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" data-toggle="tab" href="#menu1" style="font-size:20px; color:black;">TETRIS</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" data-toggle="tab" href="#menu2" style="font-size:20px; color:black;">COPTER</a>
+				</li>
+			  </ul>
+
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+				<div id="home" class="container tab-pane active"><br>
+				  <table class="table table-dark table-striped">
+						<tr>
+							<th>USERNAME</th>
+							<th>SCORE</th>
+							
+						</tr>
+						<tr>
+							<td><?php echo"".$username_snake[0];?></td>
+							<td><?php echo"".$snake[0];?></td>
+							
+						</tr>
+						<tr>
+							<td><?php echo"".$username_snake[1];?></td>
+							<td><?php echo"".$snake[1];?></td>
+							
+						</tr>
+						<tr>
+							<td><?php echo"".$username_snake[2];?></td>
+							<td><?php echo"".$snake[2];?></td>
+							
+						</tr>
+						<tr>
+							<td><?php echo"".$username_snake[3];?></td>
+							<td><?php echo"".$snake[3];?></td>
+							
+						</tr>
+						<tr>
+							<td><?php echo"".$username_snake[4];?></td>
+							<td><?php echo"".$snake[4];?></td>
+							
+						</tr>
+					
+					</table>
+				</div>
+				<div id="menu1" class="container tab-pane fade"><br>
+				  <table class="table table-dark table-striped">
 						<tr>
 							<th>USERNAME</th>
 							<th>SCORE</th>					

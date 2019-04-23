@@ -155,21 +155,6 @@ margin-left:13px;
 margin-right:13px;
 }
 
-a
-{
-color:#C87002;
-text-decoration:none;
-}
-
-a:hover
-{
-color:#793C06
-text-decoration:none;
-border-bottom:dotted 2px;
-}
-
-
-
 html, body {
 text-align: center;
 }
@@ -227,3 +212,22 @@ text-align: center;
 	left: 50%;	
 	font-size: 18px;
 }		
+
+.content {
+  width: 100%;
+  padding-right: 340px;
+  padding-left: 340px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar-brand
+{
+    position: absolute;
+    left: 5%;
+}
+
+#nav_1{
+	position: absolute;
+    left: 85%;
+}

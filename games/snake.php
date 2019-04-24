@@ -17,7 +17,7 @@
 
   </head>
 
-  <body style="background: url(bg.png)">
+  <body style="background: url(bg.jpg)">
  
 
     <div id="score">0</div>

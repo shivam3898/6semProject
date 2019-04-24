@@ -182,19 +182,16 @@ text-align: center;
 
 #btn_pos{
 	position:absolute;
-    transition: .5s ease;
-    top: 89%;
+    top: 69%;
     left: 42%;	
 }
 #btn_pos2{
 	position:absolute;
-    transition: .5s ease;
     top: 50%;
     left: 41%;	
 }
 #btn_pos3{
 	position:absolute;
-    transition: .5s ease;
     top: 89%;
     left: 69%;	
 }

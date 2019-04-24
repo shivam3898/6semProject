@@ -10,6 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="icon" type="image/ico" href="favicon.ico" />
 	<title>ASS Gaming</title>
 </head>
 
@@ -43,13 +44,13 @@
 	-->
 	<div class="content">
 	 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-	  <a class="navbar-brand" href="#">ANTHEM</a>
+	  <a class="navbar-brand" href="index.php"><img src="logo.png" style="width:70px;"></a>
 	  <ul class="navbar-nav">
 		<li class="nav-item">
-		  <a class="nav-link" href="#" style="font-size:20px;">Leaderboard</a>
+		  <a class="nav-link" href="leaderboard.php" style="font-size:20px;">Leaderboard</a>
 		</li>
 		<li class="nav-item">
-		  <a class="nav-link" href="#" style="font-size:20px;">About</a>
+		  <a class="nav-link" href="about.html" style="font-size:20px;">About</a>
 		</li>
 		<div id=nav_1>
 		<li class="nav-item dropdown">
@@ -57,8 +58,7 @@
 			Profile
 		  </a>
 		  <div class="dropdown-menu">
-			<a class="dropdown-item" href="#">My Account</a>
-			<a class="dropdown-item" href="#">Logout</a>
+			<a class="dropdown-item" href="account.php">My Account</a>
 		  </div>
 		</li>
 		</div>
@@ -109,15 +109,15 @@
 		  <form action="index.php" method="post">  
 		  <div id="sdiv2">
            <strong>USERNAME &nbsp: <input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required><br><br>
-			PASSWORD : <input style="height:30px;font-size:14pt;margin-left:3px" type="password" placeholder="****" name="password" required><br><br>
+			PASSWORD : <input style="height:30px;font-size:14pt;margin-left:3px" type="password" placeholder="****" name="password" required>
 			</div>
-			
-			<div id="btn_pos"><input type="submit" name="commit" value="Login" class="btn btn-dark">
-			<input type="button" value="Sign Up" onclick="window.location.href='signup.php'" class="btn btn-dark">
+			</div> 
+			<div style="position: absolute; left:42%; top:69%"><input type="submit" name="commit" value="Login" class="btn btn-dark"></div>
+			<div style="position: absolute; left:55%; top:69%"><input type="button" value="Sign Up" onclick="window.location.href='signup.php'" class="btn btn-dark">
 			</div>
 			</form>
 			
-            </div>       
+                  
         </div>
     </div>
 

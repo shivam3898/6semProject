@@ -20,7 +20,7 @@
 <script>
 		var retVal = confirm("GAME OVER!!! \n Do you want to play again ?");
                if( retVal == true ) {
-				   window.location.href="http://localhost/6semProject/games/index.html";
+				   window.location.href="http://localhost/6semProject/games/tetris/index.html";
                } else {
 				   window.location.href="http://localhost/6semProject/games.php";
                }

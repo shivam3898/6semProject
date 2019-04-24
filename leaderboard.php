@@ -47,140 +47,41 @@ $retval = $mysqli->query($sql);
 </head>
 
 <body>
+	<!--
     <div id="page">
         <div class="topNaviagationLink"><a href="index.php">HOME</a></div>
-		<div class="topNaviagationLink"><a href="account2.php">ACCOUNT</a></div>     
+		<div class="topNaviagationLink"><a href="account.php">ACCOUNT</a></div>     
         <div class="topNaviagationLink"><a href="leaderboard.php">LEADERBOARD</a></div>
         <div class="topNaviagationLink"><a href="about.html">ABOUT</a></div>
 	</div>
+	-->
+	<div class="content">
+		 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		  <a class="navbar-brand" href="index.php"><img src="logo.png" style="width:70px;"></a>
+		  <ul class="navbar-nav">
+			<li class="nav-item">
+			  <a class="nav-link" href="leaderboard.php" style="font-size:20px;">Leaderboard</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="about.html" style="font-size:20px;">About</a>
+			</li>
+			<div id=nav_1>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-size:20px;">
+				Profile
+			  </a>
+			  <div class="dropdown-menu">
+				<a class="dropdown-item" href="account.php">My Account</a>
+			  </div>
+			</li>
+			</div>
+		  </ul>
+		</nav>
+		</div>
 
         <div class="contentBox">
     	<div class="innerBox">
-			<!--
-			<h1>LEADERBOARD</h1>
-			<a href="lead_snake.php"><img src="sn.png"></a>
-			<a href="lead_tetris.php"><img src="tt.png"></a>
-			<a href="lead_box.php"><img src="co.png"></a>
-			-->
-			<!--
-			<ul class="nav nav-pills" role="tablist">
-				<li class="nav-item">
-				  <a class="nav-link active" data-toggle="pill" href="#home" style="font-size:20px;">SNAKE</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" data-toggle="pill" href="#menu1" style="font-size:20px;">TETRIS</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" data-toggle="pill" href="#menu2" style="font-size:20px;">COPTER</a>
-				</li>
-			  </ul>
-			  <div class="tab-content">
-				<div id="home" class="container tab-pane active"><br>
-					<table class="table table-dark table-striped">
-						<tr>
-							<th>USERNAME</th>
-							<th>SCORE</th>
-							
-						</tr>
-						<tr>
-							<td><?php echo"".$username_snake[0];?></td>
-							<td><?php echo"".$snake[0];?></td>
-							
-						</tr>
-						<tr>
-							<td><?php echo"".$username_snake[1];?></td>
-							<td><?php echo"".$snake[1];?></td>
-							
-						</tr>
-						<tr>
-							<td><?php echo"".$username_snake[2];?></td>
-							<td><?php echo"".$snake[2];?></td>
-							
-						</tr>
-						<tr>
-							<td><?php echo"".$username_snake[3];?></td>
-							<td><?php echo"".$snake[3];?></td>
-							
-						</tr>
-						<tr>
-							<td><?php echo"".$username_snake[4];?></td>
-							<td><?php echo"".$snake[4];?></td>
-							
-						</tr>
-					
-					</table>
-				</div>
-				<div id="menu1" class="container tab-pane fade"><br>
-						  <table class="table table-dark table-striped">
-						<tr>
-							<th>USERNAME</th>
-							<th>SCORE</th>					
-						</tr>
-						<tr>
-							<td><?php echo"".$username_tetris[0];?></td>
-							<td><?php echo"".$tetris[0];?></td>
-							
-						</tr>
-						<tr>
-							<td><?php echo"".$username_tetris[1];?></td>
-							<td><?php echo"".$tetris[1];?></td>
-							
-						</tr>
-						<tr>
-							<td><?php echo"".$username_tetris[2];?></td>
-							<td><?php echo"".$tetris[2];?></td>
-							
-						</tr>
-						<tr>
-							<td><?php echo"".$username_tetris[3];?></td>
-							<td><?php echo"".$tetris[3];?></td>
-							
-						</tr>
-						<tr>
-							<td><?php echo"".$username_tetris[4];?></td>
-							<td><?php echo"".$tetris[4];?></td>
-							
-						</tr>
-					
-					</table>
-				</div>
-				<div id="menu2" class="container tab-pane fade"><br>
-				  <table class="table table-dark table-striped">
-				<tr>
-					<th>USERNAME</th>
-					<th>SCORE</th>
-					
-				</tr>
-				<tr>
-					<td><?php echo"".$username_box[0];?></td>
-					<td><?php echo"".$box[0];?></td>
-					
-				</tr>
-				<tr>
-					<td><?php echo"".$username_box[1];?></td>
-					<td><?php echo"".$box[1];?></td>
-					
-				</tr>
-				<tr>
-					<td><?php echo"".$username_box[2];?></td>
-					<td><?php echo"".$box[2];?></td>
-					
-				</tr>
-				<tr>
-					<td><?php echo"".$username_box[3];?></td>
-					<td><?php echo"".$box[3];?></td>
-					
-				</tr>
-				<tr>
-					<td><?php echo"".$username_box[4];?></td>
-					<td><?php echo"".$box[4];?></td>
-					
-				</tr>
 			
-			</table>
-				</div>
-			  </div>
-			  -->
 			  
 			  <ul class="nav nav-tabs" role="tablist">
 				<li class="nav-item">

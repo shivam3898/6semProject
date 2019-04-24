@@ -7,16 +7,17 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<title>ASS Gaming</title>
-	<script>
-		alert("Login First");
-	</script>
+	
 
 </head>
 
 <body>
+
 	
 	
 	<?php
@@ -38,13 +39,38 @@ session_start();
 	
 	
 	
-	
+	<!--
     <div id="page">
         <div class="topNaviagationLink"><a href="index.php">HOME</a></div>
-		<div class="topNaviagationLink"><a href="account2.php">ACCOUNT</a></div>     
+		<div class="topNaviagationLink"><a href="account.php">ACCOUNT</a></div>     
         <div class="topNaviagationLink"><a href="leaderboard.php">LEADERBOARD</a></div>
         <div class="topNaviagationLink"><a href="about.html">ABOUT</a></div>
 	</div>
+	-->
+	<div class="content">
+		 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		  <a class="navbar-brand" href="index.php"><img src="logo.png" style="width:70px;"></a>
+		  <ul class="navbar-nav">
+			<li class="nav-item">
+			  <a class="nav-link" href="leaderboard.php" style="font-size:20px;">Leaderboard</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="about.html" style="font-size:20px;">About</a>
+			</li>
+			<div id=nav_1>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-size:20px;">
+				Profile
+			  </a>
+			  <div class="dropdown-menu">
+				<a class="dropdown-item" href="account.php">My Account</a>
+				<a class="dropdown-item" href="logout.php">Logout</a>
+			  </div>
+			</li>
+			</div>
+		  </ul>
+		</nav>
+		</div>
 
         <div class="contentBox">
     	<div class="innerBox">

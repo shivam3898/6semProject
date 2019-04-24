@@ -3,18 +3,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <title>ASS Gaming</title>
-
 </head>
 
-<body>
+<body >
 	
 	
-<?php 
-	session_start();
-	include_once("config.php");
-	echo"<script>alert('Login First');</script>";
-	header("Location:http://localhost/6semProject/login.php");
-?>
+<script>
+	alert('login first');
+	window.location.href="login.php";
+</script>
 	
 	
     <div id="page">
@@ -23,6 +20,7 @@
         <div class="topNaviagationLink"><a href="leaderboard.html">LEADERBOARD</a></div>
         <div class="topNaviagationLink"><a href="about.html">ABOUT</a></div>
 	</div>
+	
 
         <div class="contentBox">
     	<div class="innerBox">

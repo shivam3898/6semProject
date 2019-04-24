@@ -20,7 +20,7 @@
 	<script>
 			var retVal = confirm("GAME OVER!!! \n Do you want to play again ?");
                if( retVal == true ) {
-				   window.location.href="http://localhost/6semProject/games/box.html";
+				   window.location.href="http://localhost/6semProject/games/box.php";
                } else {
 				   window.location.href="http://localhost/6semProject/games.php";
 			   }

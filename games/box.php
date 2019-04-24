@@ -12,7 +12,7 @@ canvas {
 }
 </style>
 </head>
-<body onload="startGame()" onmousedown="accelerate(-0.08)" onmouseup="accelerate(0.08)" style="background: url(bg.png)">
+<body onload="startGame()" onmousedown="accelerate(-0.08)" onmouseup="accelerate(0.08)" style="background: url(bg.jpg)">
 <script>
 
 var myGamePiece;

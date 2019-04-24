@@ -3,7 +3,7 @@
 <body>
 
 <?php 
-		$score=$_GET['score'];
+		$score=$_COOKIE['score'];
 		include_once("config.php");
 		session_start();
 		$username = $_SESSION['username'];
@@ -28,3 +28,4 @@
 </script>
 </body>
 </html>
+

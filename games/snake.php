@@ -17,7 +17,7 @@
 
   </head>
 
-  <body style="background: url(bg.jpg)">
+  <body style="background: url(bg.png)">
  
 
     <div id="score">0</div>
@@ -70,8 +70,8 @@
     function main() {
       // If the game ended return early to stop game
       if (didGameEnd()){ 
-			  document.cookie="score=" + score;
-		  	  window.location.href="snake2.php";
+		  document.cookie="score="+score;
+		  window.location.href="snake2.php";
 		  return;	}						
       setTimeout(function onTick() {
         changingDirection = false;

@@ -30,7 +30,9 @@
 			header("Location:http://localhost/6semProject/account2.php");
 		}
 		else{
-			echo "<script>alert('Username and password do not match');</script>";
+			echo '<div class="alert alert-danger alert-dismissible fade show" style="text-align:center;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Error!</strong> Username or password is invalid!  </div>';
 		}
 	}
 ?>

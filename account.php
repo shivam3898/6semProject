@@ -9,7 +9,7 @@
 	
 	
 <script>
-	alert('login first');
+	
 	window.location.href="login.php";
 </script>
 	
@@ -25,6 +25,7 @@
         <div class="contentBox">
     	<div class="innerBox">
 			<h1>YOUR ACCOUNT</h1>
+			
         </div>
 		</div>
 	

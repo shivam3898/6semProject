@@ -47,6 +47,22 @@ session_start();
         <div class="topNaviagationLink"><a href="about.html">ABOUT</a></div>
 	</div>
 	-->
+	<div class="toast" data-autohide="false">
+	  <div class="toast-header">
+		<strong class="mr-auto text-primary">Error</strong>
+		<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+	  </div>
+	  <div class="toast-body" style="text-align:center;">
+		You must login first!
+	  </div>
+	</div>
+
+<script>
+$(document).ready(function(){
+  $('.toast').toast('show');
+});
+</script>
+	
 	<div class="content">
 		 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		  <a class="navbar-brand" href="index.php"><img src="logo.png" style="width:70px;"></a>
@@ -64,7 +80,6 @@ session_start();
 			  </a>
 			  <div class="dropdown-menu">
 				<a class="dropdown-item" href="account.php">My Account</a>
-				<a class="dropdown-item" href="logout.php">Logout</a>
 			  </div>
 			</li>
 			</div>

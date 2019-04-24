@@ -59,6 +59,24 @@ session_start();
 			<a href="games/tetris/index.html"><img src="tt.png"></a>
 			<a href="games/box.php"><img src="co.png"></a>
 			
+			<div class="container" style="position:absolute; left:8%;">
+			  <button class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Play the classic Snake Game and eat all you can!">Info</a>
+			</div>
+			
+			<div class="container" style="position:absolute; left:40%;">
+			  <button class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Tetris! The classic puzzle game that started it all.">Info</a>
+			</div>
+			
+			<div class="container" style="position:absolute; left:72%;">
+			  <button class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Ride the Copter through obstacles!">Info</a>
+			</div>
+
+			<script>
+			$(document).ready(function(){
+			  $('[data-toggle="tooltip"]').tooltip();   
+			});
+			</script>
+			
         </div>
 		</div>
 	

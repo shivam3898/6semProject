@@ -20,11 +20,15 @@ if(isset($_POST['submit'])){
 			}
 		}
 		else{
-			echo"Password do not match";
+			echo '<div class="alert alert-danger alert-dismissible fade show" style="text-align:center;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Error!</strong> Passwords do not match!  </div>';
 		}
 	}
 	else{
-		echo"Old Password is wrong!!!";
+		echo '<div class="alert alert-danger alert-dismissible fade show" style="text-align:center;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Error!</strong> Old Password Incorrect!  </div>';
 	}
 }
 

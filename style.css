@@ -137,6 +137,27 @@ background-color:#FFFFFF;
 background-repeat:repeat-x;
 }
 
+.contentBox2
+{
+margin-top:10px;
+width:670px;
+height:520px;
+background-color:#160306;
+padding-bottom:20px;
+}
+
+.contentBox2 .innerBox2
+{
+margin-left:10px;
+position:relative;
+width:650px;
+height:500px;
+top:10px;
+background-image:url(bgB.jpg);
+background-color:#FFFFFF;
+background-repeat:repeat-x;
+}
+
 h1
 {
 font-size:25px;
@@ -227,4 +248,9 @@ text-align: center;
 #nav_1{
 	position: absolute;
     left: 85%;
+}
+#accountImg{
+	position: absolute;
+	left:40%;
+	top:20%;
 }

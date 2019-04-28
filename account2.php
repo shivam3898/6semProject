@@ -86,15 +86,18 @@ $image = mysqli_fetch_assoc($retval);
 		</nav>
 		</div>
 
-        <div class="contentBox">
-    	<div class="innerBox">
+        <div class="contentBox2">
+    	<div class="innerBox2">
 			<h1><strong>YOUR ACCOUNT</strong></h1>
 			<p style="font-size:20px; text-align: center"><b>UserName : </b><?php echo"".$username;?></p>
+			<img src="<?php echo "uploads/".$image['image']; ?>" height=180 width=150 id="accountImg"><br><br><br><br><br><br><br><br>
+			<a href="#demo" class="btn btn-info" data-toggle="collapse" >Change Profile Picture</a>
+			<div id="demo" class="collapse">
 			<form action="account2.php" method="post" enctype="multipart/form-data">
-				<input type="file" name="file">
-				<input type="submit" name="upload" value="upload image">
-			</form>
-			<img src="<?php echo "uploads/".$image['image']; ?>">
+				<input type="file" name="file" >
+				<input type="submit" name="upload" value="Upload" >
+			</form></div>
+			
 			<h1>Your High Scores</h1><br>
 			<table>
 				<tr>

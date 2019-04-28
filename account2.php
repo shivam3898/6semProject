@@ -9,6 +9,32 @@ $retval = $mysqli->query($sql);
 		$snake=$row['snake'];
 		$tetris=$row['tetris'];
 	}
+
+
+
+if(isset($_POST['upload'])){
+	$_FILES['file']['name'] = $username."_image";
+	$file_name = $_FILES['file']['name'];
+	$file_type = $_FILES['file']['type'];
+	$file_size = $_FILES['file']['size'];
+	$file_tem_loc = $_FILES['file']['tmp_name'];
+	$file_store = "uploads/".$file_name;
+	
+	if($file_type == 'image/jpg' or $file_type == 'image/png' or $file_type == 'image/jpeg'){
+		move_uploaded_file($file_tem_loc, $file_store);
+		$sql = "UPDATE `users` SET `image`='$file_name' WHERE `username`='$username'";
+		$mysqli->query($sql);
+	}else{
+		echo"only images can be uploaded";
+	}
+}
+
+
+$sql = "Select image from users where username='$username'";
+$retval = $mysqli->query($sql);
+$image = mysqli_fetch_assoc($retval);
+
+
 ?>
 <html>
 <head>
@@ -61,12 +87,16 @@ $retval = $mysqli->query($sql);
     	<div class="innerBox">
 			<h1><strong>YOUR ACCOUNT</strong></h1>
 			<p style="font-size:20px; text-align: center"><b>UserName : </b><?php echo"".$username;?></p>
-			<br><br><br><br><br><br>
+			<form action="account2.php" method="post" enctype="multipart/form-data">
+				<input type="file" name="file">
+				<input type="submit" name="upload" value="upload image">
+			</form>
+			<img src="<?php echo "uploads/".$image['image']; ?>">
 			<h1>Your High Scores</h1><br>
 			<table>
 				<tr>
-					<th>Snake &nbsp &nbsp &nbsp</th>
-					<th>Tetris &nbsp &nbsp &nbsp</th>
+					<th>Snake &nbsp; &nbsp; &nbsp;</th>
+					<th>Tetris &nbsp; &nbsp; &nbsp;</th>
 					<th>Box</th>
 				</tr>
 				<tr>

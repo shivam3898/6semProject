@@ -31,6 +31,7 @@
 		$result = $mysqli->query($sql);
 		if($result->num_rows > 0){
 			$_SESSION['username'] = $username;
+			$_SESSION['password'] = $password;
 			header("Location:account2.php");
 		}
 		else{

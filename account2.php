@@ -46,6 +46,7 @@ $image = mysqli_fetch_assoc($retval);
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="back.js"></script>
 	<title>ASS Gaming</title>
 </head>
 
@@ -75,7 +76,8 @@ $image = mysqli_fetch_assoc($retval);
 			  </a>
 			  <div class="dropdown-menu">
 				<a class="dropdown-item" href="account2.php">My Account</a>
-				<a class="dropdown-item" href="logout.php">Logout</a>
+				<a class="dropdown-item" href="pass_change.php">Logout</a>
+				<a class="dropdown-item" href="logout.php">Logout</a>  
 			  </div>
 			</li>
 			</div>

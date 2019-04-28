@@ -1,6 +1,9 @@
 <?php 
 include_once("config.php");
 session_start();
+if(!isset($_SESSION['username'])){
+   header("Location:login.php");
+}
 $username = $_SESSION['username'];
 $sql="Select `snake`, `tetris`,`box` FROM `users` WHERE `username`='$username'";
 $retval = $mysqli->query($sql);

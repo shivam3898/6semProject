@@ -43,7 +43,9 @@ if(isset($_POST['submit'])){
 				echo "<script>window.location.href='index.php';</script>";
 			}
 			elseif(($mysqli->error) == "Duplicate entry '$username' for key 'PRIMARY'"){
-				echo"<script>document.getElementById('para').innerHTML='Username already taken. Try another name.'</script>";
+				echo '<div class="alert alert-danger alert-dismissible fade show" style="text-align:center;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Error!</strong> Username already taken!  </div>';
 			}
 			else{
 				echo "Error....".$mysqli->error;

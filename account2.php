@@ -1,6 +1,9 @@
 <?php 
 include_once("config.php");
 session_start();
+if(!isset($_SESSION['username'])){
+   header("Location:login.php");
+}
 $username = $_SESSION['username'];
 $sql="Select `snake`, `tetris`,`box` FROM `users` WHERE `username`='$username'";
 $retval = $mysqli->query($sql);
@@ -46,6 +49,7 @@ $image = mysqli_fetch_assoc($retval);
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="back.js"></script>
 	<title>ASS Gaming</title>
 </head>
 

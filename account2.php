@@ -78,6 +78,7 @@ $image = mysqli_fetch_assoc($retval);
 				<a class="dropdown-item" href="account2.php">My Account</a>
 				<a class="dropdown-item" href="pass_change.php">Change password</a>
 				<a class="dropdown-item" href="logout.php">Logout</a>  
+				<a class="dropdown-item" href="delete.php">Delete Account</a>  
 			  </div>
 			</li>
 			</div>

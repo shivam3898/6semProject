@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="icon" type="image/ico" href="favicon.ico" />
+<title>Copter</title>
 <style>
 canvas {
     border:1px solid #d3d3d3;

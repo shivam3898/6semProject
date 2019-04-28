@@ -46,7 +46,8 @@ if(isset($_POST['submit'])){
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
-<title>ASS Gaming</title>
+<link rel="icon" type="image/ico" href="favicon.ico" />
+<title>Change Password</title>
 
 </head>
 
@@ -87,8 +88,8 @@ if(isset($_POST['submit'])){
         <div class="contentBox">
     	<div class="innerBox">
 			<h1><strong>Change Password</strong></h1>
-			<div id="sign_div">
-				Old password*<br><br>New Password*<br><br>Confirm New Password*
+			<div id="sign_div"><strong>
+				OLD PASSWORD*<br><br>NEW PASSWORD*<br><br>CONFIRM PASSWORD*</strong>
 			</div>
 			<div id="sign_div2">
 			<form action="pass_change.php" method="post">

@@ -1,6 +1,7 @@
 <html>
   <head>
-    <title>Snake Game</title>
+	<link rel="icon" type="image/ico" href="favicon.ico" />
+    <title>Snake</title>
 	<style>
       #gameCanvas {
         position: absolute;

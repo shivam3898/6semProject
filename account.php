@@ -2,7 +2,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
-<title>ASS Gaming</title>
+<link rel="icon" type="image/ico" href="favicon.ico" />
+<title>Account</title>
 </head>
 
 <body >

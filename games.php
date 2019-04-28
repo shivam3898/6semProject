@@ -17,7 +17,8 @@ if(!isset($_SESSION['username'])){
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css" />
-<title>ASS Gaming</title>
+<link rel="icon" type="image/ico" href="favicon.ico" />
+<title>Games</title>
 
 </head>
 

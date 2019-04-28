@@ -13,7 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script src="back.js"></script>
-	<title>ASS Gaming</title>
+	<title>Anthem</title>
 </head>
 
 <body>
@@ -84,10 +84,10 @@
 	  <img src="rand7.jpg" width="670" height="340">
 	</div>
 	<div class="mySlides faded">
-	  <img src="rand1.jpg" width="670" height="340">
+	  <img src="rand6.jpg" width="670" height="340">
 	</div>
 	<div class="mySlides faded">
-	  <img src="mainImage.png" width="670" height="340">
+	  <img src="a1.jpg" width="670" height="340">
 	</div>
 	</div>
 	<br>

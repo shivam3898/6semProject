@@ -47,7 +47,8 @@ $image = mysqli_fetch_assoc($retval);
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script src="back.js"></script>
-	<title>ASS Gaming</title>
+	<link rel="icon" type="image/ico" href="favicon.ico" />
+	<title>Account</title>
 </head>
 
 <body>

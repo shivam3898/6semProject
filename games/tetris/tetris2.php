@@ -1,5 +1,8 @@
 <html>
-
+<head>
+<link rel="icon" type="image/ico" href="favicon.ico" />
+    <title>Tetris</title>
+</head>
 <body>
 
 <?php 

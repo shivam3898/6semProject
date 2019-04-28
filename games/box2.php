@@ -1,5 +1,8 @@
 <html>
-
+<head>
+	<link rel="icon" type="image/ico" href="favicon.ico" />
+	<title>Copter</title>
+</head>
 <body>
 	
 	<?php 

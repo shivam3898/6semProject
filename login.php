@@ -23,7 +23,9 @@ session_start();
 	<?php
 		if(isset($_POST['commit'])){
 			$username = $_POST['username'];
+			$username = mysqli_real_escape_string($mysqli, $username);
 			$password = $_POST['password'];
+			$password = mysqli_real_escape_string($mysqli, $password);
 			$sql = "SELECT * FROM `users` WHERE `username`='$username' and `password`='$password'";
 			$result = $mysqli->query($sql);
 			if($result->num_rows > 0){

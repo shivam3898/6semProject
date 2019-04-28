@@ -23,8 +23,11 @@
 	session_start();
 if(isset($_POST['submit'])){
  $username = $_POST['username']; 
+ $username = mysqli_real_escape_string($mysqli, $username);
  $password = $_POST['password'];
+ $password = mysqli_real_escape_string($mysqli, $password);	
  $cpass = $_POST['confirm_password'];
+ $cpass = mysqli_real_escape_string($mysqli, $cpass);	
     if(empty($username) || empty($password) || empty($cpass)){
         echo "Some fileds are empty.";
     }

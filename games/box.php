@@ -99,7 +99,8 @@ function component(width, height, color, x, y, type) {
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
-			window.location.href="box2.php?score="+myGameArea.frameNo;
+			document.cookie="score="+myGameArea.frameNo;
+			window.location.href="box2.php";
 			return;
         } 
     }

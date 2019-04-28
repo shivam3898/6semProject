@@ -3,7 +3,7 @@
 <body>
 	
 	<?php 
-		$score=$_GET['score'];
+		$score=$_COOKIE['score'];
 		include_once("config.php");
 		session_start();
 		$username = $_SESSION['username'];
@@ -20,7 +20,7 @@
 	<script>
 			var retVal = confirm("GAME OVER!!! \n Do you want to play again ?");
                if( retVal == true ) {
-				   window.location.href="http://localhost/6semProject/games/box.php";
+				   window.location.href="http:box.php";
                } else {
 				   window.location.href="http://localhost/6semProject/games.php";
 			   }

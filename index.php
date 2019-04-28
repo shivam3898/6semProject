@@ -1,8 +1,9 @@
-<html>
 <?php session_start(); ?>
 <?php include_once("config.php"); ?>
+<html>
 <head>
 	<meta charset="utf-8">
+	<link rel="icon" type="image/ico" href="favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
@@ -10,7 +11,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="icon" type="image/ico" href="favicon.ico" />
 	<title>ASS Gaming</title>
 </head>
 
@@ -22,12 +22,14 @@
 <?php
 	if(isset($_POST['commit'])){
 		$username = $_POST['username'];
+		$username = mysqli_real_escape_string($mysqli, $username);
 		$password = $_POST['password'];
+		$password = mysqli_real_escape_string($mysqli, $password);
 		$sql = "SELECT * FROM `users` WHERE `username`='$username' and `password`='$password'";
 		$result = $mysqli->query($sql);
 		if($result->num_rows > 0){
 			$_SESSION['username'] = $username;
-			header("Location:http://localhost/6semProject/account2.php");
+			header("Location:account2.php");
 		}
 		else{
 			echo '<div class="alert alert-danger alert-dismissible fade show" style="text-align:center;">
@@ -110,7 +112,7 @@
 		  </p>
 		  <form action="index.php" method="post">  
 		  <div id="sdiv2">
-           <strong>USERNAME &nbsp: <input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required><br><br>
+           <strong>USERNAME &nbsp;: <input style="height:30px;font-size:14pt;" type="text" placeholder="Username" name="username" required><br><br>
 			PASSWORD : <input style="height:30px;font-size:14pt;margin-left:3px" type="password" placeholder="****" name="password" required>
 			</div>
 			</div> 

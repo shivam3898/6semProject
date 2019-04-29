@@ -166,7 +166,8 @@ Piece.prototype.lock = function(){
             }
             // pieces to lock on top = game over
             if(this.y + r < 0){
-				window.location.href="tetris2.php?score="+score;
+				document.cookie="score="+score;
+				window.location.href="tetris2.php";
                 // stop request animation frame
                 gameOver = true;
                 break;
